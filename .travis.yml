@@ -1,0 +1,10 @@
+sudo: false
+language: ruby
+rvm:
+  - 2.5.0
+before_install: gem install bundler -v 1.16.1
+install: "bundle install --jobs 8"
+script:
+- bundle exec rubocop
+- bundle exec rspec
+cache: bundler

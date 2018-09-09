@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apifootball.com/api/?APIkey=655309a09751b590f3ae9bcc01757eace8dcd4c29605170e6675a6044c1b3a3a&action=get_leagues
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.14.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 08 Sep 2018 19:23:48 GMT
+      Server:
+      - Apache/2.2.15 (CentOS)
+      X-Powered-By:
+      - PHP/5.3.3
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=2592000
+      Expires:
+      - Mon, 08 Oct 2018 19:23:48 GMT
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '115'
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"country_id":"169","country_name":"England","league_id":"63","league_name":"Championship"},{"country_id":"173","country_name":"France","league_id":"128","league_name":"Ligue
+        2"}]'
+    http_version: 
+  recorded_at: Sat, 08 Sep 2018 21:23:50 GMT
+recorded_with: VCR 4.0.0
